@@ -1,0 +1,90 @@
+/* .social_icons_list {
+  display: flex;
+  justify-content: start;
+}
+
+.social_icon {
+  width: 45px;
+  height: 45px;
+  transition-duration: 500ms;
+  transition-property: fill;
+}
+
+.social_icon--tw {
+  fill: #00b4ff;
+}
+
+.social_icon--tw:hover {
+  fill: #ffffff;
+}
+
+.social_icon--fb {
+  fill: #345bb4;
+}
+
+.social_icon--fb:hover {
+  fill: #ffffff;
+}
+
+.social_icon--db {
+  fill: #e64895;
+}
+
+.social_icon--db:hover {
+  fill: #ffffff;
+} */
+
+.icon {
+  width: 19px;
+  height: 19px;
+}
+
+.icon_app { 
+  width: 135px; 
+  height: 40px;
+}
+
+.icon-menu { 
+  width: 44px; 
+  height: 44px;
+}
+
+.icon_arrow { 
+  width: 34px; 
+  height: 34px;
+}
+
+.icon_social { 
+  width: 21px; 
+  height: 21px;
+}
+
+.icon_call { 
+  width: 21px; 
+  height: 21px;
+}
+
+.quotes { 
+  width: 23px; 
+  height: 23px;
+}
+
+.icon_delivery { 
+  width: 41px; 
+  height: 41px;
+}
+
+.apps_icon:first-child {
+  width: 120px;
+  height: 40px;
+}
+
+.apps_icon:last-child {
+  width: 135px;
+  height: 40px;
+}
+
+.slider-arrow {
+  width: 32px;
+  height: 32px;
+}
