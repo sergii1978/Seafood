@@ -69,7 +69,6 @@ header {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -82,6 +81,9 @@ header {
 .nav-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
+  max-width: 706px;
+  flex-wrap: wrap;
 }
 
 .nav-item + .nav-item {
@@ -148,7 +150,6 @@ header {
 
 .phone-link {
   margin-top: 11px;
-  margin-right: 43px;
 }
 
 /* .user-list {
@@ -160,6 +161,9 @@ header {
 } */
 
 .header-content {
+  margin-top: -110px;
+  padding-bottom: 20px;
+
   background-image: url("../img/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,8 +303,6 @@ header {
 
   color: #FFFFFF;
 }
-
-
 
 .header-content__link:hover,
 .header-content__link:active,
