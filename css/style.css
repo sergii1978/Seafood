@@ -162,7 +162,7 @@ header {
 
 .header-content {
   margin-top: -110px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 
   background-image: url("../img/header_bg.png");
   background-repeat: no-repeat;
@@ -264,6 +264,10 @@ header {
 }
 
 .header__btn {
+  display: inline-block;
+
+  position: absolute;
+
   width: 298px;
   height: 48px;
   margin-left: 112px;
@@ -290,7 +294,9 @@ header {
 
 .header__box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+
   color: #ffffff;
 }
 
@@ -304,9 +310,13 @@ header {
   color: #FFFFFF;
 }
 
-.header-content__link:hover,
+/* .header-content__link:hover,
 .header-content__link:active,
 .header-content__link:focus {
+  font-weight: 700;
+} */
+
+.header-content__link--active {
   font-weight: 700;
 }
 
