@@ -263,27 +263,35 @@ header {
   content: '';
 }
 
-.header__btn {
+.btn {
+  width: 300px;
+  height: 55px;
+
   display: inline-block;
-
-  position: absolute;
-
-  width: 298px;
-  height: 48px;
-  margin-left: 112px;
-  transform: translateY(-100px);
 
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 48px;
+  line-height: 50px;
   text-align: center;
+
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+
+.header__btn {
+  display: inline-block;
+
+  position: absolute;
+
+  margin-left: 112px;
+  transform: translateY(-100px);
 
   color: #FFFFFF;
   background-color: #ffffff80;
   border: 1px solid transparent;
-  border-radius: 20px;
 }
 
 .header__btn:hover {
@@ -322,7 +330,30 @@ header {
 
 
 /* main */
-/* section promo */
+/* section product */
+.product-description_wrapper {
+  max-width: 620px;
+  padding: 0 10px 0 10px;
+}
+
+.product-info_inner {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order__btn {
+  color: #001E64;
+  background-color: #ffffff;
+  border: 1px solid #001E64;
+}
+
+.order__btn:hover {
+  color: #ffffff;
+  background-color: #001E64;
+  transition: 0.5 ease-in-out;
+}
 
 
 
