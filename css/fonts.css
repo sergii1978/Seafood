@@ -20,7 +20,7 @@
    
    /* roboto-slab-regular - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto Slab';
+     font-family: 'Roboto_Slab';
      font-style: normal;
      font-weight: 400;
      src: local('RobotoSlab-Regular'),
@@ -30,7 +30,7 @@
    
 /* roboto-slab-700 - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto Slab';
+     font-family: 'Roboto_Slab';
      font-style: normal;
      font-weight: 700;
      src: local('RobotoSlab-Bold'),
