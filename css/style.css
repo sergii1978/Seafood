@@ -598,10 +598,9 @@ header {
   height: auto;
 }
 
+
 /* section contacts */
 .contacts {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
   background-image: url(../img/contacts_bg.png);
   background-repeat: no-repeat;
 }
@@ -652,3 +651,28 @@ adress {
 
 
 /* footer */
+footer {
+  padding-top: 30px;
+  padding-bottom: 110px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.social-list {
+  width: 175px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  margin: 0 auto;
+}
+
+footer .nav-list {
+  margin-top: 74px;
+}
