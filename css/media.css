@@ -1,14 +1,17 @@
 @media screen and (min-width: 1400px) {
-
+  .menu-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1399.98px) and (min-width: 1200px) {
-
+  .menu-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1199.98px) and (min-width: 992px) {
 
-}
 
 
 @media screen and (max-width: 991.98px) and (min-width: 768px) {
