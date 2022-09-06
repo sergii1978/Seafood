@@ -36,7 +36,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">  -->
         
         <!-- Fonts Awesome -->
-        <!-- <script src="https://kit.fontawesome.com/b6317669d1.js" crossorigin="anonymous"></script> -->
+        <script src="https://kit.fontawesome.com/b6317669d1.js" crossorigin="anonymous"></script>
 
         <!--Styles-->
         <link rel="stylesheet" href="css/normalize.css">
@@ -45,11 +45,23 @@
         <link rel="stylesheet" href="css/slick.css">
 
         <link rel="stylesheet" href="css/svg.css">
-        <link rel="stylesheet" href="css/media.css">
+
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
     </head>
 
     <body class="wrapper">
+        <div id="toTop">
+            <i class="fa-solid fa-square-chevron-up"></i>
+        </div>
+
+        <!-- <div id="toTop" class="toTop">
+            <svg class="user-icon user-icon__up">
+                <use xLink:href="img/svg/icons-sprite.svg#chevron-up"></use>
+            </svg>
+        </div> -->
+
+
         <!-- header -->
         <header class="page-header">
             <div class="container">
@@ -63,35 +75,39 @@
                  <!-- <button class="menu-icon"><i class="fas fa-bars"></i></button> -->
                       <button class="menu-icon">
                         <img src="img/svg/bars.svg" width="25" height="25" alt="Меню">
+                        <!-- <svg class="user-icon user-icon__bars">
+                            <use xLink:href="img/svg/icons-sprite.svg#bars"></use>
+                        </svg> -->
                       </button>
 
                       <ul class="nav-list nav-hide">
                         <li class="nav-item">
-                            <a href="#models" class="nav-link nav-link__header">о нас</a>
+                            <a href="#about" class="nav-link nav-link__header">о нас</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#action" class="nav-link nav-link__header">продукция</a>
+                            <a href="#product" class="nav-link nav-link__header">продукция</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#delivery" class="nav-link nav-link__header">почему мы</a>
+                            <a href="#benefits" class="nav-link nav-link__header">почему мы</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#delivery" class="nav-link nav-link__header">рецепты</a>
+                            <a href="#info" class="nav-link nav-link__header">рецепты</a>
                         </li>
                         <li class="nav-item">
-                          <a href="#delivery" class="nav-link nav-link__header">история</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#delivery" class="nav-link nav-link__header">оптовикам</a>
-                      </li>
-                    </ul> 
+                          <a href="#promo" class="nav-link nav-link__header">история</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacts" class="nav-link nav-link__header">оптовикам</a>
+                        </li>
+                      </ul> 
   
-                    <a href="tel:+380953457878" class="user-link phone-link">
-                      <img src="img/svg/phone.svg" width="30" height="30" alt="Телефон">
-                    </a>
+                        <a href="tel:+380953457878" class="user-link phone-link">
+                            <img src="img/svg/phone.svg" width="30" height="30" alt="Телефон">
+                        </a>
                     </nav>
                 </div>      
             </div>
+
             <div class="header-content">
                 <div class="container">
                     <h1 class="title">Морепродукты из Норвегии</h1>
@@ -152,7 +168,7 @@
 
         <!-- main -->
         <main>
-            <section class="product">
+            <section class="product" id="product">
                 <h2 class="visually-hidden">Наша продукция</h2>
                 <div class="container product-wrapper">
                     <div class="product-list_wrapper">
@@ -447,7 +463,7 @@
                 </div>
             </section>
 
-            <section class="benefits">
+            <section class="benefits" id="benefits">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <div class="container">
                     <ul class="benefits-list">
@@ -459,7 +475,7 @@
                 </div>
             </section>
 
-            <section class="info">
+            <section class="info" id="info">
                 <h2 class="visually-hidden">Информация о продукции</h2>
                 <div class="container">
                     <div class="info-wrapper">
@@ -513,7 +529,7 @@
                 </div>
             </section>
 
-            <section class="promo">
+            <section class="promo" id="promo">
                 <h2 class="visually-hidden">Наше кредо</h2>
                 <div class="container">
                     <div class="promo-wrapper">
@@ -527,7 +543,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="visually-hidden">Наши контакты</h2>
                 <div class="container">
                     <div class="contacts-inner">
@@ -573,24 +589,24 @@
                     </li>
                 </ul>
 
-                <ul class="nav-list">
+                <ul class="nav-list nav-hide">
                     <li class="nav-item">
-                        <a href="#models" class="nav-link nav-link__header">о нас</a>
+                        <a href="#about" class="nav-link nav-link__header">о нас</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#action" class="nav-link nav-link__header">продукция</a>
+                        <a href="#product" class="nav-link nav-link__header">продукция</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#delivery" class="nav-link nav-link__header">почему мы</a>
+                        <a href="#benefits" class="nav-link nav-link__header">почему мы</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#delivery" class="nav-link nav-link__header">рецепты</a>
+                        <a href="#info" class="nav-link nav-link__header">рецепты</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#delivery" class="nav-link nav-link__header">история</a>
+                        <a href="#promo" class="nav-link nav-link__header">история</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#delivery" class="nav-link nav-link__header">оптовикам</a>
+                        <a href="#contacts" class="nav-link nav-link__header">оптовикам</a>
                     </li>
                 </ul> 
 

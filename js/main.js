@@ -25,53 +25,67 @@ $(function(){
     fade: true
   });
   
-  /* Меню */
-  $('ul.header-menu a[href^="#"').click(function () {
-    var target = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(target).offset().top
-    }, 800);
-    $('ul.menu a[href^="#"').css({
-        'color': '#212121'
-    });
-    $(this).css({
-        'color': '#004bee'
-    });
-    return false;
-});
+    /* Меню */
+    $('ul.header-menu a[href^="#"').click(function () {
+      var target = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 800);
+      $('ul.menu a[href^="#"').css({
+          'color': '#212121'
+      });
+      $(this).css({
+          'color': '#004bee'
+      });
+      return false;
+  });
 
-/* Выпадающее меню */
-$('.menu-icon').click(function () {
-    $('.nav-hide').slideToggle(500);
-    $('.nav-hide').css({
-        'display': 'flex',
-        'justify-content': 'center'
-    });
-    $('ul.nav-list').css({
-        'display': 'flex',
-        'flex-direction': 'column',
-        'justify-content': 'center',
-        'background': 'transparent'
-    });
-    $('.nav-list li').css({
-      'margin-left': '0',
-      'margin-top': '5px',
-      'margin-bottom': '5px'
-    });
-    $('.header_slideshow').css({
-        'top': '250px',
-    });
-
-    $('.header_slideshow').css({
-        'top': '250px',
-    });
-    if ($('.menu-icon').html() == '<img src="img/svg/bars.svg">') {
-      $(this).html('<img src="img/svg/xmark.svg">');
-    } else {
-      $(this).html('<img src="img/svg/bars.svg">');
+  /* Выпадающее меню */
+  $('.menu-icon').click(function () {
+      $('.nav-hide').slideToggle(500);
+      $('.nav-hide').css({
+          'display': 'flex',
+          'justify-content': 'center'
+      });
+      $('ul.nav-list').css({
+          'display': 'flex',
+          'flex-direction': 'column',
+          'justify-content': 'center',
+          'background': 'transparent'
+      });
+      $('.nav-list li').css({
+        'margin-left': '0',
+        'margin-top': '5px',
+        'margin-bottom': '5px'
+      });
       $('.header_slideshow').css({
-        'top': '0px',
-    });
-    }
-});
+          'top': '250px',
+      });
+
+      $('.header_slideshow').css({
+          'top': '250px',
+      });
+      if ($('.menu-icon').html() == '<img src="img/svg/bars.svg">') {
+        $(this).html('<img src="img/svg/xmark.svg">');
+      } else {
+        $(this).html('<img src="img/svg/bars.svg">');
+        $('.header_slideshow').css({
+          'top': '0px',
+      });
+      }
+  });
+
+  /* Кнопка наверх */
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0)
+        $('.user-icon__up').fadeIn();
+    else
+        $('.user-icon__up').fadeOut();
+  });
+  $('.user-icon__up').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 800);
+  });
+
 });

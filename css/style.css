@@ -55,6 +55,27 @@ a:focus, a:link, a:active {
   outline: none;
 }
 
+/* меню иконка */
+.user-icon { 
+  width: 50px; 
+  height: 50px;
+}
+
+#phone:hover {
+
+}
+
+/*Кнопка наверх*/
+  .user-icon__up {
+  display: none;
+
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+
+  cursor: pointer;
+}
+
 /* header */
 header {
   padding-top: 26px;
@@ -78,6 +99,10 @@ header {
   margin-left: 15px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -85,6 +110,7 @@ header {
   max-width: 706px;
   flex-wrap: wrap;
 }
+
 
 .nav-item + .nav-item {
   margin-left: 30px;
@@ -160,17 +186,9 @@ header {
   flex-wrap: wrap;
 } */
 
-/* mobile menu */
-.menu-icon {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  color: #ffffff;
-  background: #00897b;
-  border: none;
-  cursor: pointer;
- }
+  .menu-icon {
+    display: none;
+  }
 
  .menu-icon img {
    display: block;
